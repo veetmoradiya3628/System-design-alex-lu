@@ -52,7 +52,7 @@ Focus:
 * [ ] Hotel Management System
 * [ ] Restaurant Management System
 
-📌 These problems help build **basic modeling and object interaction skills** ([lldcoding.com][2])
+📌 These problems help build **basic modeling and object interaction skills**
 
 ---
 
@@ -80,7 +80,7 @@ Focus:
 * [ ] Twitter / Social Feed System
 * [ ] Stack Overflow
 
-📌 These problems simulate **real-world backend systems and machine coding rounds** ([lldcoding.com][2])
+📌 These problems simulate **real-world backend systems and machine coding rounds**
 
 ---
 
@@ -105,7 +105,7 @@ Focus:
 * [ ] Cryptocurrency Exchange
 * [ ] Collaborative Editor (Google Docs)
 
-📌 These problems require **deep design thinking + extensible architecture** ([lldcoding.com][2])
+📌 These problems require **deep design thinking + extensible architecture**
 
 ---
 
