@@ -259,3 +259,20 @@
             - B2B SaaS: More likely API Design
             - Database / analytics companies: More likely Schema Design
 
+- OOP Fundamentals
+    - Classes and Objects
+        - How do i represent real-world entities in code - classes and objects
+        - Class
+            - A class is a blueprint, template or recipe for creating objects. It defines what an object will contain (its data) and what it will be able to do (its behaviour).
+            - attributes & methods
+        - Object
+            - An object is an instance of a class.  It's the actual thing you can interact with, store data in, and invoke methods on.
+    - Enums
+        - An enum (short for enumeration) is a special data type that defines a fixed set of named constants. Unlike strings or integers, enums are type-safe, meaning the compiler ensures you can only use values that actually exist in your defined set.
+        - Enums are perfect for defining categories or states that rarely changes
+        - E.g.
+            - Order States (e.g., PENDING, IN_PROGRESS, COMPLETED)
+            - User Roles (e.g., ADMIN, CUSTOMER, DRIVER)
+            - Vehicle Types (e.g., CAR, BIKE, TRUCK)
+            - Directions (e.g., NORTH, SOUTH, EAST, WEST)
+        - Enums can do more than just name constants. In many languages, each enum value can hold additional data and even define behavior. This makes them surprisingly powerful for modeling domain concepts.
