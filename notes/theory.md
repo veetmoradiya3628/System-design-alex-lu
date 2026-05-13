@@ -287,3 +287,17 @@
             - Promotes decoupling
         - Interface based implementation helps in dependency injection implementation
         - Payment gateway / Notification service with different behaviours can be easily implemented.
+    - Encapsulation
+        - Encapsulation is one of the four foundational principles of object-oriented design. It is the practice of grouping data (variables) and behavior (methods) that operate on that data into a single unit (typically a class) and restricting direct access to the internal details of that class.
+        - Encapsulation = Data hiding + Controlled access
+        - encapsulation in action: hiding internal complexity and exposing only what’s necessary.
+        - Properties
+            - Data Hiding
+            - Controlled Access and Validation
+            - Improved Maintainability
+            - Security and Stability
+        - Encapsulated by 
+            - Access modifiers 
+                - private, protected, public
+            - Getter / Setter
+        - The general rule is simple: make everything private by default, then selectively expose what needs to be public.
