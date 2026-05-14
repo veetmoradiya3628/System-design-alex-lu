@@ -318,3 +318,14 @@
         - Abstraction vs. Encapsulation
             - Abstraction - focuses on hiding complexity
             - Encapsulation - focuses on hiding data
+    - Inheritance
+        - Inheritance allows one class (called the subclass or child class) to inherit the properties and behaviors of another class (called the superclass or parent class).
+        - Why it matters
+            - Code Reusability (DRY Principle)
+            - Logical hierarchy
+            - Ease of maintenance
+            - Polymorphism
+        - Types of Inheritance
+            - Single inheritance
+            - Multi-level inheritance
+            - Hierarchical inheritance
