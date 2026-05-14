@@ -301,3 +301,20 @@
                 - private, protected, public
             - Getter / Setter
         - The general rule is simple: make everything private by default, then selectively expose what needs to be public.
+    - Abstraction
+        - Abstraction is the process of hiding complex internal implementation details and exposing only the relevant, high-level functionality to the outside world. It allows developers to focus on what an object does, rather than how it does it.
+        - Abstraction = Hiding Complexity + Showing Essentials
+        - Abstraction is about creating a simplified view of a system that highlights the essential features while suppressing the irrelevant details.
+        - How Abstraction is archieved
+            - Abstract classes
+                - An Abstract class defines a common blueprint for a family of related classes.
+                - It can contain both abstract methods (declared but not implemented) and concrete methods (fully implemented).
+                - Subclasses must implement the abstract methods but inherit the concrete ones for free.
+            - Interfaces as Abstraction
+                - Abstract classes abstract a family of related classes that share behavior, interfaces abstract a capability that unrelated classes can share. Consider data export: you might need to export user data as CSV, order data as JSON, or analytics data as XML. These classes have nothing in common structurally, but they all share the capability of exporting data.
+            - Public APIs as Abstraction
+                - You don't always need abstract classes or interfaces to achieve abstraction. Sometimes a well-designed public API on a regular class is enough. When a class hides its internal complexity behind a few clean public methods, that's abstraction in action.
+                - Consider a DatabaseClient. The caller sees connect() and query(). Behind the scenes, the class manages connection pooling, socket lifecycle, authentication handshakes, query parsing, and retry logic. None of that is the caller's concern.
+        - Abstraction vs. Encapsulation
+            - Abstraction - focuses on hiding complexity
+            - Encapsulation - focuses on hiding data
