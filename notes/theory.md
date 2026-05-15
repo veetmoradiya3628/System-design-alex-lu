@@ -351,5 +351,10 @@
         - It’s a specialized, stronger form of association that models a "whole-part" relationship.
         - Aggregation is a specialized form of association that models a whole-part relationship with loose ownership. One class (the "whole") contains references to other class objects (the "parts"), but the parts can exist independently of the whole.
         - "has-a" relationship where the whole does not control the part's lifecycle.
-    - 
+    - Composition
+        - It represents the strongest form of "has-a" relationship, where the whole owns the parts and controls their lifecycle.
+        - Composition is a special type of association that signifies strong ownership between objects. The “whole” class is fully responsible for creating, managing, and destroying the “part” objects. In fact, the parts cannot exist without the whole.
+        - “Favor composition over inheritance.” 
+    - Comparision
+    ![alt text](/images/association_vs_aggregation_vs_composition.png)
 
