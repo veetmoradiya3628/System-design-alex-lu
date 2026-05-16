@@ -347,14 +347,31 @@
         - Associated objects are loosely coupled and can exist independently of one another.
         - The association can be unidirectional or bidirectional, and can follow different multiplicity patterns (1-to-1, 1-to-many, etc.).
         - Multiplicity defines how many instances of one class can be associated with another. 
+        - Solid Line UML symbol
     - Aggregation
         - It’s a specialized, stronger form of association that models a "whole-part" relationship.
         - Aggregation is a specialized form of association that models a whole-part relationship with loose ownership. One class (the "whole") contains references to other class objects (the "parts"), but the parts can exist independently of the whole.
         - "has-a" relationship where the whole does not control the part's lifecycle.
+        - "Hollow Diamond" - UML symbol
     - Composition
         - It represents the strongest form of "has-a" relationship, where the whole owns the parts and controls their lifecycle.
         - Composition is a special type of association that signifies strong ownership between objects. The “whole” class is fully responsible for creating, managing, and destroying the “part” objects. In fact, the parts cannot exist without the whole.
         - “Favor composition over inheritance.” 
     - Comparision
     ![alt text](/images/association_vs_aggregation_vs_composition.png)
-
+    - Dependency
+        - It represents the weakest form of relationship between classes.
+        - it reflects a one-time interaction, often through method parameters, local variables, or return types
+        - A Dependency exists when one class relies on another to fulfill a responsibility, but does so without retaining a permanent reference to it.
+        - Dependencies in Code
+            - As method parameters
+            - As Local variable
+            - As Return type
+            - As Static Method call
+        - Dependency Injection (DI), one of the most powerful principles in modern software design.
+        - Dependency Injection is a design technique where a class receives the objects it depends on, instead of creating them itself.
+        - Dashed Arrow for UML symbol
+    - Realization
+        - Realization is an "implements" relationship where a class fulfills a contract defined by an interface.
+        - Realization represents a contract fulfillment relationship. Think of it as a promise: the interface declares "these methods must exist," and the implementing class promises to provide them.
+        - Realization vs Inheritance
