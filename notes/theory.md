@@ -375,3 +375,101 @@
         - Realization is an "implements" relationship where a class fulfills a contract defined by an interface.
         - Realization represents a contract fulfillment relationship. Think of it as a promise: the interface declares "these methods must exist," and the implementing class promises to provide them.
         - Realization vs Inheritance
+
+Design Principles
+    - DRY
+        - Don’t Repeat Yourself
+        - Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
+        - Applies to
+            - Business rules
+            - Configuration
+            - Data models
+            - Documentation
+            - Tests
+        - The rule of three to follow
+        - Problems
+            - Harder to maintain
+            - Higher risk of bugs
+            - Bloated codebase
+            - Poor test coverage
+        - When its okay to repeat
+            - Avoid premature abstractions
+            - Keep tests readable
+            - Keep it simple
+    - KISS
+        - KISS Principle, which stands for Keep It Simple, Stupid.
+        - KISS means code should be easy to read, easy to maintain, easy to change
+        - How to Apply kiss
+            - Write code for humans, not machines
+            - Avoid premature abstraction
+            - Favor composition over inheritance
+            - Keep functions short
+            - Use familier constructs
+    - YAGNI
+        - Have you ever added a feature because you might need it someday?
+        - You Aren’t Gonna Need It
+        - Always implement things when you actually need them, never when you just foresee that you need them.
+        - Why premature work is harmful
+            - Wasted Time and Effort
+            - Increased complexity
+            - Delayed value
+            - Higher maintainance cost
+    - Law of Demeter
+        - Only talk to your immediate friends.
+        - The Law of Demeter, also known as the Principle of Least Knowledge, was formulated in 1987 at Northeastern University during work on the Demeter project. Despite its age, it remains one of the most practical guidelines for writing maintainable object-oriented code.
+        - The rule is straightforward. A method M on an object O should only call methods on:
+            - Itself (the object O)
+            - Its own fields (objects that O holds as instance variables)
+            - Its method parameters (objects passed into M)
+            - Objects it creates (objects instantiated within M)
+        - Benefits
+            - Low coupling
+            - Better Encapsulation
+            - Easier refactoring
+            - Improved testability
+            - Cleaner APIs
+    - Separation of Concerns
+        - The goal is to organize a system's components in a way that each part addresses a single concern, or a cohesive aspect of functionality, rather than mixing multiple concerns together. This approach enhances modularity, maintainability, and scalability of software systems.
+        - Why it matters
+            - Easier maintenance
+            - Better scalability
+            - Easier testing
+            - Better team collaboration
+            - Reduced coupling
+        - Common pattern
+            - MVC Pattern
+            - Clean Architecture
+            - Hexagonal architecture
+            - Event-Driven Architecture
+        - Bad signs that SOC is missing
+            - God classes
+            - Massive Functions
+            - Tight coupling
+            - Duplicate logic
+        - One module/component/service should focus on one concern well.
+    - Coupling and Cohersion 
+        - Cohersion
+            - How strongly related the responsibilities inside a module are.
+            - High cohesion = module does one focused thing well.
+        - Coupling
+            - How dependent one module is on another.
+            - Low coupling = modules interact minimally and independently.
+        - High Cohesion + Low Coupling = Good Design
+        - Types of Cohersion
+            - Functional Cohesion
+            - Sequential Cohesion
+            - Communicational Cohesion
+            - Temporal Cohesion
+            - Logical Cohesion
+            - Coincidental Cohesion
+    - Composing Objects
+        - Prefer **object composition** over deep inheritance hierarchies.
+        - Composition means building complex behavior using smaller reusable objects.
+        - It promotes **flexibility, modularity, and loose coupling** in system design.
+        - Objects collaborate through **interfaces/dependencies** instead of parent-child inheritance.
+        - Behavior can be changed dynamically by replacing composed components.
+        - Helps avoid rigid and tightly coupled inheritance chains.
+        - Improves **testability, maintainability, and scalability** of code.
+        - Common in patterns like **Strategy, Decorator, Adapter, and Dependency Injection**.
+        - Example: A `Car` object contains an `Engine` object instead of inheriting from `Engine`.
+        - Modern architectures and clean code practices strongly favor composition-based design.
