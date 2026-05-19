@@ -512,3 +512,17 @@ SOLID
             - Misinterpreting "closed for modification"
             - Abstraction hell
             - Forgetting the "Why"
+    - Liskov Substitution Principle
+        - If S is a subtype of T, then objects of type T may be replaced with objects of type S without altering any of the desirable properties of that program
+        - Why it matters
+            - Reliability and predictability
+            - Reduced bugs
+            - Maintainability and extensability
+            - True polymorphism
+            - Testability
+        - Common pitfalls
+            - The "IS-A" Linguistic Trap
+            - Overriding Methods to Do Nothing or Throw Exceptions
+            - Violating Preconditions or Postconditions
+            - Type Checks in Client Code
+            - Restricting or Relaxing Behavior Unexpectedly
